@@ -1,0 +1,59 @@
+{
+  "actions": [
+    {
+      "actionType": "addDisco",
+      "selector": "#app > div > form",
+      "waitFor": {
+        "actionType": "click",
+        "selector": "#discoBtn"
+      }
+    },
+    {
+      "actionType": "click",
+      "selector": "input#tab2"
+    },
+    {
+      "actionType": "click",
+      "selector": "#app > div > form > div > div:nth-child(2) > div.tab__content > button"
+    },
+    {
+      "actionType": "fill",
+      "selector": "#holder-name > input",
+      "value": "The Doctor"
+    },
+    {
+      "actionType": "fill",
+      "selector": "#card-name > input",
+      "value": "5567343878120932"
+    },
+    {
+      "actionType": "fill",
+      "selector": "#expiry > input",
+      "value": "0921"
+    },
+    {
+      "actionType": "fill",
+      "selector": "#cvv > input",
+      "value": "123"
+    },
+    {
+      "actionType": "click",
+      "selector": "button.v-button.add"
+    },
+    {
+      "actionType": "click",
+      "selector": "#app > div > form > div > div:nth-child(2) > div.tab__content > div > div > input[type=radio]"
+    },
+    {
+      "actionType": "click",
+      "selector": "#app > div > form > button"
+    },
+    {
+      "waitFor": {
+        "actionType": "shown",
+        "selector": ".checkout__result",
+        "isSuccess": true
+      }
+    }
+  ]
+}
