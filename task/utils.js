@@ -11,7 +11,7 @@ export const dispatchEvent = ({ type, key, charCode }, target) => {
     ctrlKey: false,
     altKey: false,
     shiftKey: false,
-    metaKey: false
+    metaKey: false,
   };
   const mouseTypes = [
     "click",
@@ -21,7 +21,7 @@ export const dispatchEvent = ({ type, key, charCode }, target) => {
     "mouseout",
     "mouseover",
     "mouseup",
-    "scroll"
+    "scroll",
   ];
   const keyboardTypes = ["keydown", "keypress", "keyup"];
   const htmlTypes = ["change", "focus", "blur", "select", "submit", "input"];
@@ -34,7 +34,7 @@ export const dispatchEvent = ({ type, key, charCode }, target) => {
       clientX: 0,
       clientY: 0,
       button: 0,
-      relatedTarget: null
+      relatedTarget: null,
     };
 
     event = new MouseEvent(type, Object.assign(mouseEventInit, eventInit));
@@ -58,7 +58,7 @@ export const getCard = async () => {
     name: "Ivan Sinyavin",
     number: 5567343878120932,
     expiry: "03/22",
-    cvv: 123
+    cvv: 123,
   };
 };
 

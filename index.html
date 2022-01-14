@@ -1,26 +1,74 @@
 <!DOCTYPE html>
 <html lang="">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="icon" href="/favicon.ico" />
-    <title>source</title>
-    <script src="/task/index.js"></script>
-    <link href="/css/app.29d5b6e5.css" rel="preload" as="style" />
-    <link href="/js/app.75d8feee.js" rel="preload" as="script" />
-    <link href="/js/chunk-vendors.abfbf73c.js" rel="preload" as="script" />
-    <link href="/css/app.29d5b6e5.css" rel="stylesheet" />
-  </head>
-  <body>
-    <noscript
-      ><strong
-        >We're sorry but source doesn't work properly without JavaScript
-        enabled. Please enable it to continue.</strong
-      ></noscript
-    >
-    <div id="app"></div>
-    <script src="/js/chunk-vendors.abfbf73c.js"></script>
-    <script src="/js/app.75d8feee.js"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="icon" href="/favicon.ico" />
+  <title>source</title>
+  <script src="/task/index.js"></script>
+  <link href="/css/app.29d5b6e5.css" rel="preload" as="style" />
+  <link href="/js/app.75d8feee.js" rel="preload" as="script" />
+  <link href="/js/chunk-vendors.abfbf73c.js" rel="preload" as="script" />
+  <link href="/css/app.29d5b6e5.css" rel="stylesheet" />
+  <!-- Just for TEST TASK, of cause it should be in css file -->
+  <style>
+    .disco-logo {
+      display: flex;
+      align-items: center
+    }
+
+    .disco-logo__image {
+      margin: 0 6px
+    }
+
+    .disco-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      appearance: none;
+      transition: border-color .15s ease-in-out;
+      border: 1px solid transparent;
+      background-color: #6fcf97;
+      font-family: 'IBM Plex Sans Condensed', sans-serif;
+      font-weight: 600;
+      color: #000;
+      cursor: pointer;
+      /* target page button styles */
+      height: var(--button-height);
+      padding: 0 var(--indent-sm);
+      box-sizing: border-box;
+      border-radius: var(--rounded);
+      /* custom position */
+      position: absolute;
+      margin-top: calc(var(--button-height) * -1);
+      margin-left: 120px;
+    }
+
+    .disco-button:focus,
+    .disco-button:not(:disabled):hover {
+      border: 1px solid #219653
+    }
+
+    .disco-button:active {
+      background-color: rgba(111, 207, 151, .7)
+    }
+
+    .disco-button[disabled] {
+      background-color: #aaa;
+      cursor: default;
+      opacity: .5
+    }
+  </style>
+</head>
+
+<body>
+  <noscript><strong>We're sorry but source doesn't work properly without JavaScript
+      enabled. Please enable it to continue.</strong></noscript>
+  <div id="app"></div>
+  <script src="/js/chunk-vendors.abfbf73c.js"></script>
+  <script src="/js/app.75d8feee.js"></script>
+</body>
+
 </html>
